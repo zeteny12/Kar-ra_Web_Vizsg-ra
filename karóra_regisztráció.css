@@ -1,0 +1,11 @@
+body{
+    background-image: linear-gradient(to right, rgb(85, 4, 85), black, rgb(6, 6, 97));
+    background-attachment: fixed;
+}
+
+.card{
+    width: 50%;
+    height: auto;
+    padding: auto;
+    margin: auto;
+}
