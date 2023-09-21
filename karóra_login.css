@@ -93,9 +93,7 @@ body{
         width: 10px;
         height: 10px;
     }
-    .input-group{
-        height: 20px;
-    }
+    
 }
 
 @media (max-width: 740px){
