@@ -1,11 +1,46 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
 body{
     background-image: linear-gradient(to right, rgb(85, 4, 85), black, rgb(6, 6, 97));
     background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
 }
 
 .card{
-    width: 50%;
+    width: 30%;
     height: auto;
     padding: auto;
     margin: auto;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+.input-group-text{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 8px;
 }
