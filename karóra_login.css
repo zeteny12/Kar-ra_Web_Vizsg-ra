@@ -2,6 +2,9 @@ html{
     box-sizing: border-box;
     height: 100%;
     font-size: 15px;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
 }
 
 body{
@@ -53,6 +56,12 @@ body{
     align-items: center;
     border-radius: 16px;
     padding: 8px;
+}
+
+.btn-primary:hover{
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    transform: translateY(-8px);
+    transition: .2s;
 }
 
 /*RESPONSIVE*/
