@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #000000;
+}
+
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+button{
+    border-radius: 10px;
+}
+
+.card{
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+.card-reszleg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 380px;
+    display: inline-flex;
+    margin: 25px;
+}
+
+.card-reszleg:hover{
+    transform: translateY(-20px);
+    transition: .2s;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 10px black;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background:none;
+}
