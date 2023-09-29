@@ -26,6 +26,7 @@ button{
 .card{
     border: 1px solid;
     border-radius: 30px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .card-reszleg{
@@ -74,7 +75,15 @@ button{
     margin-top: 150px;
 }
 
+.btn-success{
+    border-radius: 15px;
+    padding: 3px;
+    margin: 0;
+}
 
+.karora_ar{
+    justify-content: space-between;
+}
 
 
 footer{
