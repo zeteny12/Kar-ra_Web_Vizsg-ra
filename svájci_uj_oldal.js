@@ -33,25 +33,25 @@ document.getElementById('Adventic-gomb').addEventListener('click', function() {
 
 //Checkbox szűrés
 //Passion-A8202
-//Elemek, melyeket eltűnnek
-const RoyalLadyElem = document.querySelectorAll('#RoyalLady-10405-kartya');
-const SportiveElem = document.querySelectorAll('#Sportive-kartya');
-const LaPassionElem = document.querySelectorAll('#LaPassion-10220-kartya');
-const ClassicElem = document.querySelectorAll('#Classic-01002-kartya');
-const AdventicElem = document.querySelectorAll('#Adventic-kartya');
+var PassionElem = document.querySelectorAll('#Passion-A8202-kartya');
+var RoyalLadyElem = document.querySelectorAll('#RoyalLady-10405-kartya');
+var SportiveElem = document.querySelectorAll('#Sportive-kartya');
+var LaPassionElem = document.querySelectorAll('#LaPassion-10220-kartya');
+var ClassicElem = document.querySelectorAll('#Classic-01002-kartya');
+var AdventicElem = document.querySelectorAll('#Adventic-kartya');
 
 //Passion-A8202-checkbox
-const szuroCheckbox = document.getElementById('Passion-A8202-checkbox');
+var szuroCheckbox = document.getElementById('Passion-A8202-checkbox');
+var szuroCheckbox1 = document.getElementById('RoyalLady-10405-checkbox');
 
-//Eseménykezelő hozzárendelése
+
 szuroCheckbox.addEventListener('change', function() {
     const csakKijeloltElemek = szuroCheckbox.checked;
 
-    //Iterálunk az összes listaelemen
+    
     RoyalLadyElem.forEach(function(elem) {
         const kategoria = elem.getAttribute('data-kategoria');
 
-        // Ha a Checkbox be van pipálva és az elem kategóriája nem megfelelő, elrejtjük az elemet
         if (csakKijeloltElemek && kategoria !== 'kijelolt') {
             elem.style.display = 'none';
         } else {
@@ -62,7 +62,6 @@ szuroCheckbox.addEventListener('change', function() {
     SportiveElem.forEach(function(elem) {
       const kategoria = elem.getAttribute('data-kategoria');
 
-      // Ha a Checkbox be van pipálva és az elem kategóriája nem megfelelő, elrejtjük az elemet
       if (csakKijeloltElemek && kategoria !== 'kijelolt') {
           elem.style.display = 'none';
       } else {
@@ -73,7 +72,6 @@ szuroCheckbox.addEventListener('change', function() {
   LaPassionElem.forEach(function(elem) {
     const kategoria = elem.getAttribute('data-kategoria');
 
-    // Ha a Checkbox be van pipálva és az elem kategóriája nem megfelelő, elrejtjük az elemet
     if (csakKijeloltElemek && kategoria !== 'kijelolt') {
         elem.style.display = 'none';
     } else {
@@ -84,7 +82,6 @@ szuroCheckbox.addEventListener('change', function() {
   ClassicElem.forEach(function(elem) {
     const kategoria = elem.getAttribute('data-kategoria');
 
-    // Ha a Checkbox be van pipálva és az elem kategóriája nem megfelelő, elrejtjük az elemet
     if (csakKijeloltElemek && kategoria !== 'kijelolt') {
         elem.style.display = 'none';
     } else {
@@ -95,7 +92,6 @@ szuroCheckbox.addEventListener('change', function() {
   AdventicElem.forEach(function(elem) {
     const kategoria = elem.getAttribute('data-kategoria');
 
-    // Ha a Checkbox be van pipálva és az elem kategóriája nem megfelelő, elrejtjük az elemet
     if (csakKijeloltElemek && kategoria !== 'kijelolt') {
         elem.style.display = 'none';
     } else {
@@ -104,6 +100,62 @@ szuroCheckbox.addEventListener('change', function() {
   });
 });
 
+
+
+
+szuroCheckbox1.addEventListener('change', function() {
+  const csakKijeloltElemek1 = szuroCheckbox1.checked; // Corrected variable name
+
+  PassionElem.forEach(function(elem) {
+      const kategoria = elem.getAttribute('data-kategoria');
+
+      if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
+          elem.style.display = 'none';
+      } else {
+          elem.style.display = 'inline-flex';
+      }
+  });
+
+  SportiveElem.forEach(function(elem) {
+    const kategoria = elem.getAttribute('data-kategoria');
+
+    if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
+        elem.style.display = 'none';
+    } else {
+        elem.style.display = 'inline-flex';
+    }
+});
+
+LaPassionElem.forEach(function(elem) {
+  const kategoria = elem.getAttribute('data-kategoria');
+
+  if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
+      elem.style.display = 'none';
+  } else {
+      elem.style.display = 'inline-flex';
+  }
+});
+
+ClassicElem.forEach(function(elem) {
+  const kategoria = elem.getAttribute('data-kategoria');
+
+  if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
+      elem.style.display = 'none';
+  } else {
+      elem.style.display = 'inline-flex';
+  }
+});
+
+AdventicElem.forEach(function(elem) {
+  const kategoria = elem.getAttribute('data-kategoria');
+
+  if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
+      elem.style.display = 'none';
+  } else {
+      elem.style.display = 'inline-flex';
+  }
+});
+});
 
 
 
