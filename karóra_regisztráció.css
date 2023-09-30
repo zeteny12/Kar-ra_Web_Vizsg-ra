@@ -58,3 +58,8 @@ body{
     transform: translateY(-8px);
     transition: .2s;
 }
+
+.btn-primary:not(:hover){
+    transition: .2s;
+    transform: scale(1);
+}

@@ -68,6 +68,11 @@ body{
     transition: .2s;
 }
 
+.btn-primary:not(:hover){
+    transition: 0.2s;
+    transform: scale(1);
+}
+
 /*RESPONSIVE*/
 @media (max-width: 1000px){
     body{

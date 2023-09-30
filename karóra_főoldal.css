@@ -81,6 +81,16 @@ body{
     padding-inline: 20px;
 }
 
+#svajci_gomb:hover{
+    transform: translateX(10px);
+    transition: 0.3s;
+}
+
+#svajci_gomb:not(:hover){
+    transition: 0.3s;
+    transition: scale(1);
+}
+
 #svajci_gomb_link{
     color: #fff;
     text-decoration: none;
@@ -99,6 +109,16 @@ body{
 #nemet_gomb_link{
     color: #fff;
     text-decoration: none;
+}
+
+#nemet_gomb:hover{
+    transform: translateX(10px);
+    transition: 0.3s;
+}
+
+#nemet_gomb:not(:hover){
+    transition: 0.3s;
+    transition: scale(1);
 }
 
 
