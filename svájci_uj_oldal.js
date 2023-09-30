@@ -32,187 +32,71 @@ document.getElementById('Adventic-gomb').addEventListener('click', function() {
 
 
 //Checkbox szűrés
-//Passion-A8202
-var PassionElem = document.querySelectorAll('#Passion-A8202-kartya');
-var RoyalLadyElem = document.querySelectorAll('#RoyalLady-10405-kartya');
-var SportiveElem = document.querySelectorAll('#Sportive-kartya');
-var LaPassionElem = document.querySelectorAll('#LaPassion-10220-kartya');
-var ClassicElem = document.querySelectorAll('#Classic-01002-kartya');
-var AdventicElem = document.querySelectorAll('#Adventic-kartya');
+function handleCheckboxChange(checkbox, cardElements) {
+  checkbox.addEventListener('change', function() {
+    const csakKijeloltElemek = checkbox.checked;
 
-//Passion-A8202-checkbox
-var szuroCheckbox = document.getElementById('Passion-A8202-checkbox');
-var szuroCheckbox1 = document.getElementById('RoyalLady-10405-checkbox');
-
-
-szuroCheckbox.addEventListener('change', function() {
-    const csakKijeloltElemek = szuroCheckbox.checked;
-
-    
-    RoyalLadyElem.forEach(function(elem) {
-        const kategoria = elem.getAttribute('data-kategoria');
-
-        if (csakKijeloltElemek && kategoria !== 'kijelolt') {
-            elem.style.display = 'none';
-        } else {
-            elem.style.display = 'inline-flex';
-        }
-    });
-
-    SportiveElem.forEach(function(elem) {
+    cardElements.forEach(function(elem) {
       const kategoria = elem.getAttribute('data-kategoria');
 
       if (csakKijeloltElemek && kategoria !== 'kijelolt') {
-          elem.style.display = 'none';
+        elem.style.display = 'none';
       } else {
-          elem.style.display = 'inline-flex';
+        elem.style.display = 'inline-flex';
       }
+    });
   });
+}
 
-  LaPassionElem.forEach(function(elem) {
-    const kategoria = elem.getAttribute('data-kategoria');
+//Kártyák
+const PassionElem = document.querySelectorAll('#Passion-A8202-kartya');
+const RoyalLadyElem = document.querySelectorAll('#RoyalLady-10405-kartya');
+const SportiveElem = document.querySelectorAll('#Sportive-kartya');
+const LaPassionElem = document.querySelectorAll('#LaPassion-10220-kartya');
+const ClassicElem = document.querySelectorAll('#Classic-01002-kartya');
+const AdventicElem = document.querySelectorAll('#Adventic-kartya');
 
-    if (csakKijeloltElemek && kategoria !== 'kijelolt') {
-        elem.style.display = 'none';
-    } else {
-        elem.style.display = 'inline-flex';
-    }
-  });
+//Checkboxok
+const PassionCheckbox = document.getElementById('Passion-A8202-checkbox');
+const RoyalLadyCheckbox = document.getElementById('RoyalLady-10405-checkbox');
+const SportiveCheckbox = document.getElementById('Sportive-checkbox');
+const LaPassionCheckbox = document.getElementById('LaPassion-10220-checkbox');
+const ClassicCheckbox = document.getElementById('Classic-01002-checkbox');
+const AdventicCheckbox = document.getElementById('Adventic-checkbox');
 
-  ClassicElem.forEach(function(elem) {
-    const kategoria = elem.getAttribute('data-kategoria');
+//Szűrés
+handleCheckboxChange(PassionCheckbox, RoyalLadyElem);
+handleCheckboxChange(PassionCheckbox, SportiveElem);
+handleCheckboxChange(PassionCheckbox, LaPassionElem);
+handleCheckboxChange(PassionCheckbox, ClassicElem);
+handleCheckboxChange(PassionCheckbox, AdventicElem);
 
-    if (csakKijeloltElemek && kategoria !== 'kijelolt') {
-        elem.style.display = 'none';
-    } else {
-        elem.style.display = 'inline-flex';
-    }
-  });
+handleCheckboxChange(RoyalLadyCheckbox, PassionElem);
+handleCheckboxChange(RoyalLadyCheckbox, SportiveElem);
+handleCheckboxChange(RoyalLadyCheckbox, LaPassionElem);
+handleCheckboxChange(RoyalLadyCheckbox, ClassicElem);
+handleCheckboxChange(RoyalLadyCheckbox, AdventicElem);
 
-  AdventicElem.forEach(function(elem) {
-    const kategoria = elem.getAttribute('data-kategoria');
+handleCheckboxChange(SportiveCheckbox, PassionElem);
+handleCheckboxChange(SportiveCheckbox, RoyalLadyElem);
+handleCheckboxChange(SportiveCheckbox, LaPassionElem);
+handleCheckboxChange(SportiveCheckbox, ClassicElem);
+handleCheckboxChange(SportiveCheckbox, AdventicElem);
 
-    if (csakKijeloltElemek && kategoria !== 'kijelolt') {
-        elem.style.display = 'none';
-    } else {
-        elem.style.display = 'inline-flex';
-    }
-  });
-});
+handleCheckboxChange(LaPassionCheckbox, PassionElem);
+handleCheckboxChange(LaPassionCheckbox, RoyalLadyElem);
+handleCheckboxChange(LaPassionCheckbox, SportiveElem);
+handleCheckboxChange(LaPassionCheckbox, ClassicElem);
+handleCheckboxChange(LaPassionCheckbox, AdventicElem);
 
+handleCheckboxChange(ClassicCheckbox, PassionElem);
+handleCheckboxChange(ClassicCheckbox, RoyalLadyElem);
+handleCheckboxChange(ClassicCheckbox, SportiveElem);
+handleCheckboxChange(ClassicCheckbox, LaPassionElem);
+handleCheckboxChange(ClassicCheckbox, AdventicElem);
 
-
-
-szuroCheckbox1.addEventListener('change', function() {
-  const csakKijeloltElemek1 = szuroCheckbox1.checked; // Corrected variable name
-
-  PassionElem.forEach(function(elem) {
-      const kategoria = elem.getAttribute('data-kategoria');
-
-      if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
-          elem.style.display = 'none';
-      } else {
-          elem.style.display = 'inline-flex';
-      }
-  });
-
-  SportiveElem.forEach(function(elem) {
-    const kategoria = elem.getAttribute('data-kategoria');
-
-    if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
-        elem.style.display = 'none';
-    } else {
-        elem.style.display = 'inline-flex';
-    }
-});
-
-LaPassionElem.forEach(function(elem) {
-  const kategoria = elem.getAttribute('data-kategoria');
-
-  if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
-      elem.style.display = 'none';
-  } else {
-      elem.style.display = 'inline-flex';
-  }
-});
-
-ClassicElem.forEach(function(elem) {
-  const kategoria = elem.getAttribute('data-kategoria');
-
-  if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
-      elem.style.display = 'none';
-  } else {
-      elem.style.display = 'inline-flex';
-  }
-});
-
-AdventicElem.forEach(function(elem) {
-  const kategoria = elem.getAttribute('data-kategoria');
-
-  if (csakKijeloltElemek1 && kategoria !== 'kijelolt') {
-      elem.style.display = 'none';
-  } else {
-      elem.style.display = 'inline-flex';
-  }
-});
-});
-
-
-
-
-
-
-//RoyalLady-10405
-/*const checkboxRoyalLady = document.getElementById('RoyalLady-10405-checkbox');
-const RoyalLady10405 = document.getElementById('RoyalLady-10405-kartya');
-checkboxRoyalLady.addEventListener('change', function() {
-    if (checkboxRoyalLady.checked) {
-        RoyalLady10405.style.display = 'flex';
-    } else {
-        RoyalLady10405.style.display = 'inline-flex';
-    }
-  });*/
-
-//Sportive
-/*const checkboxSportive = document.getElementById('Sportive-checkbox');
-const Sportive = document.getElementById('Sportive-kartya');
-checkboxSportive.addEventListener('change', function() {
-    if (checkboxSportive.checked) {
-        Sportive.style.display = 'flex';
-    } else {
-        Sportive.style.display = 'inline-flex';
-    }
-  });*/
-
-//LaPassion-10220
-const checkboxLaPassion = document.getElementById('LaPassion-10220-checkbox');
-const LaPassion10220 = document.getElementById('LaPassion-10220-kartya');
-checkboxLaPassion.addEventListener('change', function() {
-    if (checkboxLaPassion.checked) {
-        LaPassion10220.style.display = 'flex';
-    } else {
-        LaPassion10220.style.display = 'inline-flex';
-    }
-  });
-
-//Classic-01002
-const checkboxClassic = document.getElementById('Classic-01002-checkbox');
-const Classic01002 = document.getElementById('Classic-01002-kartya');
-checkboxClassic.addEventListener('change', function() {
-    if (checkboxClassic.checked) {
-        Classic01002.style.display = 'flex';
-    } else {
-        Classic01002.style.display = 'inline-flex';
-    }
-  });
-
-//Adventic
-const checkboxAdventic = document.getElementById('Adventic-checkbox');
-const Adventic = document.getElementById('Adventic-kartya');
-checkboxAdventic.addEventListener('change', function() {
-    if (checkboxAdventic.checked) {
-        Adventic.style.display = 'flex';
-    } else {
-        Adventic.style.display = 'inline-flex';
-    }
-  });
+handleCheckboxChange(AdventicCheckbox, PassionElem);
+handleCheckboxChange(AdventicCheckbox, RoyalLadyElem);
+handleCheckboxChange(AdventicCheckbox, SportiveElem);
+handleCheckboxChange(AdventicCheckbox, LaPassionElem);
+handleCheckboxChange(AdventicCheckbox, ClassicElem);

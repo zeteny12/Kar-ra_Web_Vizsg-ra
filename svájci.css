@@ -85,7 +85,6 @@ button{
     justify-content: space-between;
 }
 
-
 footer{
     position: relative;
     bottom: 0;
@@ -98,6 +97,7 @@ footer{
     padding-top: 10px;
     color: #fff;
 }
+
 .footer-content{
     display: flex;
     align-items: center;
@@ -105,18 +105,21 @@ footer{
     flex-direction: column;
     text-align: center;
 }
+
 .footer-content h3{
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
 }
+
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
 }
+
 .elerhetoseg{
     list-style: none;
     display: flex;
@@ -124,18 +127,22 @@ footer{
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
+
 .elerhetoseg li{
     margin: 0 10px;
 }
+
 .elerhetoseg a{
     text-decoration: none;
     color: #fff;
 }
+
 .elerhetoseg a i{
     font-size: 1.1rem;
     transition: color .4s ease;
 
 }
+
 .elerhetoseg a:hover i{
     color: aqua;
 }
@@ -146,11 +153,13 @@ footer{
     padding: 10px 0;
     text-align: center;
 }
+
 .footer-bottom p{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
+
 .footer-bottom span{
     text-transform: uppercase;
     opacity: .4;
