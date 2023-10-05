@@ -30,6 +30,32 @@ body{
     position: absolute;
     top: 10px;
     right: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 500;
+    box-sizing: content-box;
+}
+
+#login h3 span a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#login h3{
+    color: #fff;
+}
+
+#login a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#cim{
+    text-transform: uppercase;
 }
 
 .kep{
@@ -52,7 +78,8 @@ body{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 5%;
+    border: 2px solid #fff;
+    border-radius: 15px;
 }
 
 
