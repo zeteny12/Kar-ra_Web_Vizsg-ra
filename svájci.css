@@ -23,6 +23,7 @@ button{
     border-radius: 10px;
 }
 
+/* KARTYA */
 .card{
     border: 1px solid;
     border-radius: 30px;
@@ -58,6 +59,7 @@ button{
     background:none;
 }
 
+/*OLDAL CIME*/
 #kollekcio{
     display: flex;
     align-items: center;
@@ -85,13 +87,12 @@ button{
     justify-content: space-between;
 }
 
-
-
-
+/* FEJLÉC */
 .navbar{
     width: 100%;
     padding: 2%;
     background-color: #804a03d0; 
+    box-shadow: 2px 2px 5px black;
 }
 
 .navbar ul{
@@ -124,7 +125,7 @@ button{
     padding: 3px 3px;    
 }
 
-
+/* BEJELENTKEZES*/
 #Svajci_login{
     position: absolute;
     right: 15px;
@@ -160,6 +161,7 @@ button{
     
 }
 
+/* FOOTER */
 footer{
     position: relative;
     bottom: 0;
