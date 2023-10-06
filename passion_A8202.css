@@ -1,4 +1,89 @@
-.container{
+/*FEJLÉC*/
+.navbar{
+    width: 100%;
+    padding: 2%;
+    background-color: #804a03d0; 
+    box-shadow: 2px 2px 5px black;
+}
+
+.navbar ul{
+    margin: 0;
+    
+}
+
+.navbar ul li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    padding: 5 7px;
+}
+
+.menu{
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu:hover{
+    background: #6d440fd0; 
+    color: #000000;
+    transition: .5s;
+    border-radius: 10px;
+    padding: 3px 3px;    
+}
+
+#kollekcio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* BEJELENTKEZES*/
+#Svajci_login{
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 500;
+    box-sizing: content-box;
+}
+
+#Svajci_login, #Svajci_login_ikon h3 span{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#Svajci_login h3{
+    color: #000000;
+}
+
+#Svajci_login, #Svajci_login_ikon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+#Svajci_login_ikon{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.egyeduli-teremek container{
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
     margin: auto;
     padding-left: 25px;
@@ -187,7 +272,7 @@ input:focus{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 10px 0;
     text-align: center;
 }

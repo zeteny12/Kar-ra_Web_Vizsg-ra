@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('hatter.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('hatter_fooldal/hatter.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ footer{
     right: 0;
     background: #111;
     height: 220px;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-top: 10px;
     color: #fff;
@@ -206,7 +206,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 10px 0;
     text-align: center;
 }

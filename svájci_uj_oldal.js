@@ -1,7 +1,7 @@
 //Részletek az órákról
 //Passion-A8202
 document.getElementById('Passion-A8202-gomb').addEventListener('click', function() {
-  window.open('karóra_login.html', 'blank');
+  window.open('passion_A8202.html', 'blank');
 });
 
 //RoyalLady-10405

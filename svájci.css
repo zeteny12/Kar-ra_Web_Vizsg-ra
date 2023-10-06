@@ -169,7 +169,7 @@ footer{
     right: 0;
     background: #111;
     height: 220px;
-    width: 100vw;
+    width: 100%;
     font-family: "Open Sans";
     padding-top: 10px;
     color: #fff;
@@ -226,7 +226,7 @@ footer{
 
 .footer-bottom{
     background: #000;
-    width: 100vw;
+    width: 100%;
     padding: 10px 0;
     text-align: center;
 }
