@@ -19,6 +19,7 @@ body{
     justify-content: center;
 }
 
+/*VISSZA_A_FOOLDALRA*/
 #arrow_icon_container{
     display: none;
 }
@@ -47,6 +48,7 @@ body{
     text-decoration: none;
 }
 
+/*KARTYA*/
 .card{
     width: 400px;
     height: 400px;
@@ -63,6 +65,7 @@ body{
     color: #fff;
 }
 
+/*FELULET*/
 .input-group-text{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
@@ -74,6 +77,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.40);
 }
 
+/*NAVIGALAS_REGISZTRACIOHOZ*/
 #Regisztráció{
     margin-left: 20px;
 }
@@ -83,6 +87,7 @@ body{
     color: #fff;
 }
 
+/*BEJELENTKEZES_GOMB*/
 .btn{
     justify-content: center;
     align-items: center;

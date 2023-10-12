@@ -10,10 +10,7 @@ body{
     padding: 0;
 }
 
-.kep h2{
-    color: white;
-}
-
+/*CIM*/
 #cim{
     color: white;
     font-size: 50px;
@@ -24,8 +21,10 @@ body{
     display: inline-block;
     margin-top: 50px;
     width: 50%;
+    text-transform: uppercase;
 }
 
+/*BEJELENTKEZES_IKON*/
 #login{
     position: absolute;
     top: 10px;
@@ -50,18 +49,14 @@ body{
     text-decoration: none;
 }
 
-#cim{
-    text-transform: uppercase;
-}
-
+/*KEPEK_DIV*/
 .kep{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-
+/*SVAJCI_NEMET_KEPEK*/
 .csomag{
     position: relative;
     margin: 30px;
@@ -78,23 +73,7 @@ body{
     border-radius: 15px;
 }
 
-
-
-.lablec-container{
-        color: white;
-        text-align: center;
-        padding: 7px;
-        background-color: black;
-        border: 1px solid #000;
-        margin-top: 11.2%;
-}
-.lablec-info{
-    display: flex;
-    justify-content: center;
-}
-
-
-
+/*SVAJCI_KEP_ALATTI_GOMB*/
 #svajci_gomb{
     border: 1px solid #fff;
     border-radius: 110px;
@@ -119,6 +98,7 @@ body{
     text-decoration: none;
 }
 
+/*NEMET_KEP_ALATTI_GOMB*/
 #nemet_gomb{
     border: 1px solid #fff;
     border-radius: 110px;
@@ -145,7 +125,7 @@ body{
 }
 
 
-
+/*FOOTER*/
 footer{
     position: relative;
     bottom: 0;
