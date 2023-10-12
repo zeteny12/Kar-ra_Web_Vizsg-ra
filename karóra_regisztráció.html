@@ -10,19 +10,30 @@
     <title>Karórák | Regisztráció</title>
 </head>
 <body>
+    <!--VISSZA_A_FOOLDALRA-->
+    <div id="arrow_icon_container">
+        <span id="vissza_a_fooldalra">
+            <a href="karóra_főoldal.html" title="Vissza a főoldalra">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16" color="white">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </a>
+        </span>
+    </div>
+
+    <!--KARTYA-->
     <div class="card">
-        
-        <!-- Kártya címe -->
+        <!--KARTYA_CIME-->
         <div class="card-header text-center text-md-center">
             <h1 class="mb-0 fs-5">Regisztráció</h1>
         </div>
         
-        <!-- Kártya teste -->
+        <!--KARTYA_TESTE-->
         <div class="card-body py-3">
             <form>
                 <div class="from-group mb-4">
                     
-                    <!-- Vezetéknév -->
+                    <!--VEZETEKNEV-->
                     <label for="Vezetéknév"><b>Vezetéknév:</b></label>
                     <div class="input-group">
                         <span class="input-group-text" id="Vezetéknév_kicsi">
@@ -37,7 +48,7 @@
                     </div>
                     <hr>
 
-                    <!-- Keresztnév -->
+                    <!--KERESZTNEV-->
                     <label for="Keresztnév"><b>Keresztnév:</b></label>
                     <div class="input-group">
                         <span class="input-group-text" id="Keresztnév_kicsi">
@@ -52,7 +63,7 @@
                     </div>
                     <hr>
 
-                    <!-- E-mail cím -->
+                    <!--E-MAIL-->
                     <label for="E-mail cím"><b>E-mail cím:</b></label>
                     <div class="input-group">
                         <span class="input-group-text" id="E-mail_kicsi">
@@ -63,11 +74,11 @@
                                 </svg>
                             </span>
                         </span>
-                        <input type="text" class="form-control" placeholder="E-mail cím" id="email_regisztracio" autofocus required>
+                        <input type="email" class="form-control" placeholder="nev@pelda.com" id="email_regisztracio" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}" required title="Érvényes e-mail címet adjon meg" autofocus required>
                     </div>
                     <hr>
 
-                    <!-- Jelszó -->
+                    <!--JELSZO-->
                     <label for="Jelszó"><b>Jelszó:</b></label>
                     <div class="input-group">
                         <span class="input-group-text" id="Jelszó_kicsi">
@@ -78,11 +89,11 @@
                                 </svg>
                             </span>
                         </span>
-                        <input type="password" class="form-control" placeholder="Jelszó" id="jelszo_regisztracio" autofocus required>
+                        <input type="password" class="form-control" placeholder="Legalább 8 karakter" id="jelszo_regisztracio" pattern=".{8,}" required title="A jelszónak legalább 8 karakter hosszúnak kell lennie" autofocus required>
                     </div>
                     <hr>
 
-                    <!-- Jelszó ismét -->
+                    <!--JELSZO_ISM-->
                     <label for="Jelszó_ismét"><b>Jelszó ismét:</b></label>
                     <div class="input-group">
                         <span class="input-group-text" id="Jelszó_kicsi2">
@@ -93,45 +104,19 @@
                                 </svg>
                             </span>
                         </span>
-                        <input type="password" class="form-control" placeholder="Jelszó ismét" id="jelszo_regisztracio" autofocus required>
+                        <input type="password" class="form-control" placeholder="Legalább 8 karakter" id="jelszo_regisztracio_ismet" pattern=".{8,}" required title="A jelszavaknak egyeznie kell" autofocus required>
                     </div>
-                    <hr>
-                    
-                    <!-- Lakcím -->
-                    <label for="Lakcím1"><b>Lakcím1:</b></label>
-                    <div class="input-group">
-                        <span class="input-group-text" id="Lakcím1_kicsi">
-                            <span class="fas fa-envelope">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                </svg>
-                            </span>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Irányítószám, Város, Utca, Házszám" id="Lakcím1" autofocus required>
-                    </div>
-                    <hr>
-
-                    <!-- Lakcím2 -->
-                    <label for="Lakcím2"><b>Lakcím2:</b></label>
-                    <div class="input-group">
-                        <span class="input-group-text" id="Lakcím2_kicsi">
-                            <span class="fas fa-envelope">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                </svg>
-                            </span>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Emelet, Ajtó (ha Önre nem vonatkozik húzza ki '-')" autofocus required>
-                    </div>
-                    <hr>
                 </div>
 
-                <!-- Regisztáció gomb -->
+                <!--REGISZTRACIO_GOMB-->
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Regisztráció</button>
+                    <button type="submit" class="btn btn-primary" id="regisztracios_gomb">Regisztráció</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <!--SCRIPT-->
+    <script src="/karóra_regisztráció.js"></script>
 </body>
 </html>
