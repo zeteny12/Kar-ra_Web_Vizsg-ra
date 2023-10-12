@@ -36,14 +36,10 @@ body{
     box-sizing: content-box;
 }
 
-#login h3 span a{
+#login span a{
     position: absolute;
     display: flex;
     justify-content: center;
-}
-
-#login h3{
-    color: #fff;
 }
 
 #login a{
