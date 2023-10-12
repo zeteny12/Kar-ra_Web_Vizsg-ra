@@ -20,7 +20,6 @@ body{
     border-radius: 5px;
     display: inline-block;
     margin-top: 50px;
-    width: 50%;
     text-transform: uppercase;
 }
 
@@ -63,7 +62,6 @@ body{
     width: 600px;
     height: 400px;
     overflow: hidden;
-    border-radius: 0px;
 }
 .csomag img{
     height: 100%;
@@ -196,3 +194,54 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
+
+/*RESPONSIVE*/
+/*@media (max-width: 1300px) {
+    /*.kep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kep .svajci_kep_div {
+        margin: 30px;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .kep .nemet_kep_div {
+        margin: 30px;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+    }
+}*/
+
+@media (max-width: 428px) {
+    #cim_div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cim {
+        font-size: 30px;
+    }
+
+    .kep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kep .svajci_kep_div,
+    .kep .nemet_kep_div {
+        width: 100%;
+        max-width: 100%; /* Új szabály az átméretezéshez */
+        height: auto; /* Átméretezés a képarányok megtartásával */
+        overflow: hidden;
+        margin: 10px 0; /* Alkalmazható margó a képek között */
+    }
+}
+
